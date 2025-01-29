@@ -85,3 +85,21 @@ section {
 span {
     color: var(--main-color);
 }
+
+.inicio, .final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inicio-img {
+    border-right: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(red,blue 1);
+}
+
+.inicio-img img, .sobre-img img{
+width: 100; 
+
+}
