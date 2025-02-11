@@ -108,7 +108,7 @@ span {
 
 .inicio-img img, .sobre-img img{
  display: block;
- width: 100%;
+ width: 45vh;
  height: auto;
  border-radius: 8px;
 }
@@ -151,12 +151,107 @@ span {
     justify-content: space-evenly;
 }
 
-.historia-container .historia-box {
+.poderes-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.poderes-container .poderes-box {
     padding: 2rem, 1 rem, 2.5rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: solid 0.15rem var(--main-color);
+    border: solid 0.15rem var(--bg-color-01);
     background-color: var(--bg-color-02);
     transition: 0.5s ease;
 }
+
+.poderes-container .poderes-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.01);
+}
+
+.poderes-box{
+    font-size:1.3rem ;
+    color: var(--main-color);
+}
+
+.poderes-box h3{
+    font-size: 1.5rem;
+}
+
+.poderes-box p{
+    margin: 0.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.poderes-container{
+    display: grid;
+    gap: 1.2rem;
+}
+
+.poderes-img{
+   width: 100%;
+   transition: 0.5s ease;
+}
+
+.fim{
+    max-width: 45rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box input, .fim textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--bg-color-02);
+    border-radius: 0.5rem;
+    margin: 0.4rem 0;
+}
+
+.fim textarea{
+    resize: none;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: var(--bg-color-01);
+}
+
+
+/* --- button --- */
+.btn{
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.btn :hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* --- /button --- */
 
